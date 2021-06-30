@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1625094137,
-    'checksum' => '6e7abeb4bd3fc8795cd2d11a786b5fab',
+    'timestamp' => 1625095584,
+    'checksum' => 'da11be48294b8415662629e350134f1b',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -175,6 +175,10 @@ return [
             ]
         ],
         'user/plugins' => [
+            'plugins/color-tools' => [
+                'file' => 'user/plugins/color-tools/languages.yaml',
+                'modified' => 1625095575
+            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
                 'modified' => 1625094052
@@ -187,13 +191,25 @@ return [
                 'file' => 'user/plugins/form/languages.yaml',
                 'modified' => 1625094042
             ],
+            'plugins/license-manager' => [
+                'file' => 'user/plugins/license-manager/languages.yaml',
+                'modified' => 1625095159
+            ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/languages.yaml',
                 'modified' => 1625094058
             ],
+            'plugins/nextgen-editor' => [
+                'file' => 'user/plugins/nextgen-editor/languages.yaml',
+                'modified' => 1625095388
+            ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/languages.yaml',
                 'modified' => 1625094058
+            ],
+            'plugins/svg-icons' => [
+                'file' => 'user/plugins/svg-icons/languages.yaml',
+                'modified' => 1625095580
             ]
         ],
         'user/plugins/admin/languages' => [
@@ -3145,6 +3161,10 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'PLUGINS_MUST_BE_ENABLED' => 'Plugin must be enabled to configure',
                 'ACTIVATION_REQUIRED' => 'Activation required to configure'
             ],
+            'PLUGIN_COLOR_TOOLS' => [
+                'TEXT_VARIABLE' => 'Text Variable',
+                'TEXT_VARIABLE_HELP' => 'Text to add to the top of a page'
+            ],
             'PLUGIN_EMAIL' => [
                 'MAIL_ENGINE' => 'Mail Engine',
                 'MAIL_ENGINE_DISABLED' => 'Disabled',
@@ -3281,6 +3301,19 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'INVALID_MIME_TYPE' => 'The MIME type %s for the file %s is not accepted.',
                 'INVALID_FILE_EXTENSION' => 'The File Extension for the file %s is not accepted.'
             ],
+            'PLUGIN_LICENSE_MANAGER' => [
+                'TITLE' => 'License Manager',
+                'LICENSES' => 'Licenses',
+                'LICENSE' => 'Product License',
+                'SLUG' => 'Product Slug',
+                'INFO_TITLE' => 'Information',
+                'INFO' => 'These **product licenses** are used by Grav\'s Package Management System (GPM) to validate installation and updates of premium plugins and themes.  When you purchase a premium plugin or theme, you should be redirected to a confirmation page that will provide you with the relevant **Slug** and **License** that you will need to add here.',
+                'INVALID_LICENSE' => 'Invalid Licenses found',
+                'EXPORT' => 'Export',
+                'IMPORT' => 'Import',
+                'IMPORTED_X_LICENSES' => 'Successfully imported %s licenses',
+                'IMPORT_TITLE' => 'Import Existing License File'
+            ],
             'PLUGIN_MARKDOWN_NOTICES' => [
                 'USE_BUILT_IN_CSS' => 'Use built-in CSS',
                 'BASE_CLASSES' => 'Base classes',
@@ -3290,9 +3323,17 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'LEVEL_CLASSES_HELP' => 'The classes to use for each level of notices depth',
                 'LEVEL_CLASSES_PLACEHOLDER' => 'e.g. yellow, red, blue, green'
             ],
+            'PLUGIN_NEXTGEN_EDITOR' => [
+                'TEXT_VARIABLE' => 'Text Variable',
+                'TEXT_VARIABLE_HELP' => 'Text to add to the top of a page'
+            ],
             'PLUGIN_PROBLEMS' => [
                 'BUILTIN_CSS' => 'Use built in CSS',
                 'BUILTIN_CSS_HELP' => 'Include the CSS provided by the Problems plugin'
+            ],
+            'PLUGIN_SVG_ICONS' => [
+                'TEXT_VARIABLE' => 'Text Variable',
+                'TEXT_VARIABLE_HELP' => 'Text to add to the top of a page'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -5764,6 +5805,15 @@ L\'**authentification à deux facteurs** est activée sur ce compte. Veuillez ut
                 'DESTINATION_NOT_SPECIFIED' => 'La destination n’est pas indiquée.',
                 'INVALID_MIME_TYPE' => 'Le type MIME %s pour le fichier %s n’est pas accepté.',
                 'INVALID_FILE_EXTENSION' => 'L’extension pour le fichier %s n’est pas acceptée.'
+            ],
+            'PLUGIN_LICENSE_MANAGER' => [
+                'TITLE' => 'Gestionnaire de licences',
+                'LICENSES' => 'Licences',
+                'LICENSE' => 'Licence produit',
+                'SLUG' => 'Slug produit',
+                'INFO_TITLE' => 'Informations',
+                'INFO' => 'Ces **licences produit** sont utilisées par le Système de Gestion de Packs (GPM - Package Management System) de Grav pour la validation de l’installation des mises à jour, des thèmes et des plugins premium. Lorsque vous achetez un thème ou un plugin premium, vous devriez être redirigé vers une page de confirmation qui vous proposera les **slugs** et **licences** appropriés que vous aurez besoin d’ajouter.',
+                'INVALID_LICENSE' => 'Licences trouvées non valides'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -26911,6 +26961,15 @@ La **2FA** è abilitata per questo account. Si prega di utilizzare la vostra app
                 'DROPZONE_RESPONSE_ERROR' => 'Il Server ha risposto con il codice {{statusCode}}.',
                 'YES' => 'Si',
                 'NO' => 'No'
+            ],
+            'PLUGIN_LICENSE_MANAGER' => [
+                'TITLE' => 'Gestore Licenze',
+                'LICENSES' => 'Licenze',
+                'LICENSE' => 'Licenza del Prodotto',
+                'SLUG' => 'Slug del Prodotto',
+                'INFO_TITLE' => 'Informazioni',
+                'INFO' => 'Queste **licenze prodotti** sono usate dal Grav Package Management System (GPM) per validare l\'installazione ed aggiornamenti di plugin e temi premium. Quando si acquistano un plugin o tema premium, si verrà reindirizzati ad una pagina di conferma che fornirà lo **Slug** e la **Licenza** che dovranno essere inserite qui di seguito.',
+                'INVALID_LICENSE' => 'Rilevate Licenze non valide'
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---Titolo: %1$s---# Errore: Frontmatter non valido: \'%2$s\' * *%3$s * * \' \'%4$s \' \'',

@@ -1,13 +1,21 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1625094329,
-    'checksum' => 'ca8e77574aca99008e4661adcf7108f5',
+    'timestamp' => 1625095638,
+    'checksum' => 'c54966513a1947788032dd19c4237dfb',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1625094326
+            ],
+            'plugins/lightbox-gallery' => [
+                'file' => 'user/config/plugins/lightbox-gallery.yaml',
+                'modified' => 1625095602
+            ],
+            'plugins/nextgen-editor' => [
+                'file' => 'user/config/plugins/nextgen-editor.yaml',
+                'modified' => 1625095399
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -19,7 +27,11 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1625094039
+                'modified' => 1625095611
+            ],
+            'themes/typhoon' => [
+                'file' => 'user/config/themes/typhoon.yaml',
+                'modified' => 1625095638
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
@@ -57,6 +69,10 @@ return [
                 'file' => 'user/plugins/admin/admin.yaml',
                 'modified' => 1625094043
             ],
+            'plugins/color-tools' => [
+                'file' => 'user/plugins/color-tools/color-tools.yaml',
+                'modified' => 1625095575
+            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
                 'modified' => 1625094052
@@ -73,6 +89,14 @@ return [
                 'file' => 'user/plugins/form/form.yaml',
                 'modified' => 1625094041
             ],
+            'plugins/license-manager' => [
+                'file' => 'user/plugins/license-manager/license-manager.yaml',
+                'modified' => 1625095159
+            ],
+            'plugins/lightbox-gallery' => [
+                'file' => 'user/plugins/lightbox-gallery/lightbox-gallery.yaml',
+                'modified' => 1625095598
+            ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
                 'modified' => 1625094055
@@ -81,15 +105,31 @@ return [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
                 'modified' => 1625094058
             ],
+            'plugins/nextgen-editor' => [
+                'file' => 'user/plugins/nextgen-editor/nextgen-editor.yaml',
+                'modified' => 1625095388
+            ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1625094058
+            ],
+            'plugins/shortcode-core' => [
+                'file' => 'user/plugins/shortcode-core/shortcode-core.yaml',
+                'modified' => 1625095583
+            ],
+            'plugins/svg-icons' => [
+                'file' => 'user/plugins/svg-icons/svg-icons.yaml',
+                'modified' => 1625095580
             ]
         ],
         'user/themes' => [
             'themes/quark' => [
                 'file' => 'user/themes/quark/quark.yaml',
                 'modified' => 1625094040
+            ],
+            'themes/typhoon' => [
+                'file' => 'user/themes/typhoon/typhoon.yaml',
+                'modified' => 1625095586
             ]
         ]
     ],
@@ -109,6 +149,118 @@ return [
                     'exp' => false,
                     'icons' => false
                 ]
+            ],
+            'typhoon' => [
+                'enabled' => true,
+                'external_in_new_tab' => false,
+                'append_site_title' => true,
+                'custom_logo' => [
+                    'user/assets/typhoon/capstoneFall2019.png' => [
+                        'name' => 'capstoneFall2019.png',
+                        'type' => 'image/png',
+                        'size' => 52499,
+                        'path' => 'user/assets/typhoon/capstoneFall2019.png'
+                    ]
+                ],
+                'custom_logo_strip_svg_style' => false,
+                'custom_favicon' => [
+                    
+                ],
+                'colors' => [
+                    'text_style' => 'text-gray-600 dark:text-gray-400',
+                    'brightness_lighter' => 20,
+                    'brightness_darker' => 20,
+                    'primary' => '#006AE1'
+                ],
+                'appearance' => [
+                    'theme' => 'system',
+                    'selector' => true,
+                    'storage' => true
+                ],
+                'body_classes' => NULL,
+                'section_classes' => 'bg-white dark:bg-gray-900 py-8 md:py-24',
+                'wrapper_spacing' => 'xl:container xl:mx-auto md:px-6 px-4',
+                'menu' => [
+                    'primary_location' => 'header',
+                    'primary_menu_levels' => 3,
+                    'mobile_nav' => true,
+                    'icon_classes' => 'hidden md:inline-block h-4 w-4 text-gray-500 mr-1',
+                    'login' => [
+                        'enabled' => true,
+                        'icon' => 'tabler/user.svg',
+                        'logged_in_display' => 'username',
+                        'logout_icon' => 'tabler/logout.svg'
+                    ],
+                    'langswitcher' => [
+                        'enabled' => true,
+                        'icon' => 'tabler/world.svg'
+                    ]
+                ],
+                'header_bar' => [
+                    'background' => 'auto',
+                    'custom_style' => 'linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%)',
+                    'text' => 'auto'
+                ],
+                'hero' => [
+                    'display' => true,
+                    'overlay' => 'dark',
+                    'overlay_direction' => 'right',
+                    'alignment' => 'left',
+                    'image' => 'theme://images/headers/sea-and-sky.jpg',
+                    'custom' => '#3C4043',
+                    'padding' => 'pt-32 md:pt-40 lg:pt-48 xl:pt-56 pb-16 md:pb-20 lg:pb-24 xl:pb-32',
+                    'overlay_gradient' => [
+                        0 => '0.8',
+                        1 => '0.3'
+                    ]
+                ],
+                'footer' => [
+                    'menu_enabled' => true,
+                    'menu' => [
+                        0 => [
+                            'label' => 'Terms & Conditions',
+                            'link' => '#'
+                        ],
+                        1 => [
+                            'label' => 'Privacy Policy',
+                            'link' => '#'
+                        ]
+                    ],
+                    'social_enabled' => true,
+                    'social' => [
+                        0 => [
+                            'network' => 'twitter',
+                            'link' => 'https://twitter.com/getgrav'
+                        ],
+                        1 => [
+                            'network' => 'github',
+                            'link' => 'https://github.com/getgrav'
+                        ]
+                    ],
+                    'copyright' => '[Grav](https://getgrav.org?classes=hover:text-primary,font-bold) was 
+[svg-icon icon="code" class="text-gray-700 dark:text-gray-400 w-4 h-4"] with
+[svg-icon icon="heart" class="text-red-700 w-4 h-4 animate-pulse"] by 
+[Trilby Media, LLC](https://trilby.media?classes=hover:text-primary,font-bold)
+'
+                ],
+                'notices' => [
+                    0 => [
+                        'content' => 'An example **critical** message that should show up on homepage only',
+                        'enabled' => false,
+                        'only_homepage' => true,
+                        'type' => 'critical',
+                        'learn_more_link' => 'https://getgrav.org'
+                    ],
+                    1 => [
+                        'content' => 'An example **note** that should appear on all pages! No link..',
+                        'enabled' => false,
+                        'only_homepage' => false,
+                        'type' => 'note',
+                        'learn_more_link' => NULL
+                    ]
+                ],
+                'footer_page_route' => NULL,
+                'notices_page_route' => NULL
             ]
         ],
         'plugins' => [
@@ -214,6 +366,9 @@ return [
                     ]
                 ]
             ],
+            'color-tools' => [
+                'enabled' => true
+            ],
             'email' => [
                 'enabled' => true,
                 'from' => NULL,
@@ -291,6 +446,43 @@ return [
                     'secret_key' => NULL
                 ]
             ],
+            'license-manager' => [
+                'enabled' => true,
+                'text_var' => 'Custom Text added by the **License Manager** plugin (disable plugin to remove)'
+            ],
+            'lightbox-gallery' => [
+                'enabled' => true,
+                'active' => true,
+                'autoIncludeAssets' => true,
+                'options' => [
+                    'selector' => '[rel="lightbox"], .glightbox',
+                    'skin' => 'clean',
+                    'openEffect' => 'zoom',
+                    'closeEffect' => 'zoom',
+                    'slideEffect' => 'slide',
+                    'moreText' => 'See more',
+                    'moreLength' => 60,
+                    'closeButton' => true,
+                    'touchNavigation' => true,
+                    'touchFollowAxis' => true,
+                    'keyboardNavigation' => true,
+                    'closeOnOutsideClick' => true,
+                    'startAt' => 0,
+                    'width' => '90vw',
+                    'height' => 'auto',
+                    'videosWidth' => '960px',
+                    'descPosition' => 'bottom',
+                    'loop' => false,
+                    'zoomable' => true,
+                    'draggable' => true,
+                    'dragToleranceX' => 40,
+                    'dragToleranceY' => 65,
+                    'dragAutoSnap' => false,
+                    'preload' => true,
+                    'autoplayVideos' => true,
+                    'autofocusVideos' => false
+                ]
+            ],
             'login' => [
                 'enabled' => true,
                 'built_in_css' => true,
@@ -364,9 +556,102 @@ return [
                     3 => 'green'
                 ]
             ],
+            'nextgen-editor' => [
+                'default_for_all' => true,
+                'dev_host' => 'localhost',
+                'dev_port' => 2000,
+                'enabled' => true,
+                'env' => 'production',
+                'options' => [
+                    'markdownit' => [
+                        'breaks' => true,
+                        'highlight' => 'function (/*str, lang*/) { return \'\'; }',
+                        'html' => true,
+                        'langPrefix' => 'language-',
+                        'linkify' => false,
+                        'quotes' => '“”‘’',
+                        'typographer' => false,
+                        'xhtmlOut' => false
+                    ],
+                    'nextgenEditor' => [
+                        'height' => NULL,
+                        'toolbar' => [
+                            'items' => [
+                                0 => 'undo',
+                                1 => 'redo',
+                                2 => 'removeFormat',
+                                3 => 'heading',
+                                4 => 'bold',
+                                5 => 'italic',
+                                6 => 'underline',
+                                7 => 'strikethrough',
+                                8 => 'horizontalLine',
+                                9 => 'link',
+                                10 => 'imageUpload',
+                                11 => 'blockQuote',
+                                12 => 'numberedList',
+                                13 => 'bulletedList',
+                                14 => 'htmlEmbed',
+                                15 => 'codeBlock',
+                                16 => 'code',
+                                17 => 'insertTable',
+                                18 => 'mediaEmbed'
+                            ],
+                            'sticky' => true
+                        ],
+                        'htmlEmbed' => [
+                            'showPreviews' => false
+                        ]
+                    ],
+                    'turndown' => [
+                        'bulletListMarker' => '*',
+                        'codeBlockStyle' => 'fenced',
+                        'emDelimiter' => '*',
+                        'headingStyle' => 'atx',
+                        'hr' => '---',
+                        'linkReferenceStyle' => 'full',
+                        'linkStyle' => 'inlined',
+                        'strongDelimiter' => '**',
+                        'preformattedCode' => false
+                    ],
+                    'transformations' => [
+                        'typography' => true,
+                        'quotes' => true,
+                        'symbols' => true,
+                        'mathematical' => true,
+                        'nonbreaking_space' => true,
+                        'custom' => NULL
+                    ]
+                ]
+            ],
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'shortcode-core' => [
+                'enabled' => true,
+                'active' => true,
+                'active_admin' => true,
+                'admin_pages_only' => true,
+                'parser' => 'regular',
+                'include_default_shortcodes' => true,
+                'css' => [
+                    'notice_enabled' => true
+                ],
+                'custom_shortcodes' => NULL,
+                'fontawesome' => [
+                    'load' => true,
+                    'url' => '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css',
+                    'v5' => false
+                ],
+                'nextgen-editor' => [
+                    'env' => 'production',
+                    'dev_host' => 'localhost',
+                    'dev_port' => 2001
+                ]
+            ],
+            'svg-icons' => [
+                'enabled' => true
             ]
         ],
         'backups' => [
@@ -855,7 +1140,7 @@ node_modules'
             ],
             'pages' => [
                 'type' => 'regular',
-                'theme' => 'quark',
+                'theme' => 'typhoon',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -1028,7 +1313,8 @@ node_modules'
                 'allowed_fallback_types' => [
                     
                 ],
-                'auto_metadata_exif' => false
+                'auto_metadata_exif' => false,
+                'upload_limit' => 2097152
             ],
             'session' => [
                 'enabled' => true,

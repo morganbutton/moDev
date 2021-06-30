@@ -1,0 +1,84 @@
+enabled: true
+external_in_new_tab: false
+append_site_title: true
+custom_logo:
+  user/assets/typhoon/capstoneFall2019.png:
+    name: capstoneFall2019.png
+    type: image/png
+    size: 52499
+    path: user/assets/typhoon/capstoneFall2019.png
+custom_logo_strip_svg_style: false
+custom_favicon: {  }
+colors:
+  text_style: 'text-gray-600 dark:text-gray-400'
+  brightness_lighter: 20
+  brightness_darker: 20
+  primary: '#006AE1'
+appearance:
+  theme: system
+  selector: true
+  storage: true
+body_classes: null
+section_classes: 'bg-white dark:bg-gray-900 py-8 md:py-24'
+wrapper_spacing: 'xl:container xl:mx-auto md:px-6 px-4'
+menu:
+  primary_location: header
+  primary_menu_levels: 3
+  mobile_nav: true
+  icon_classes: 'hidden md:inline-block h-4 w-4 text-gray-500 mr-1'
+  login:
+    enabled: true
+    icon: tabler/user.svg
+    logged_in_display: username
+    logout_icon: tabler/logout.svg
+  langswitcher:
+    enabled: true
+    icon: tabler/world.svg
+header_bar:
+  background: auto
+  custom_style: 'linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%)'
+  text: auto
+hero:
+  display: true
+  overlay: dark
+  overlay_direction: right
+  alignment: left
+  image: 'theme://images/headers/sea-and-sky.jpg'
+  custom: '#3C4043'
+  padding: 'pt-32 md:pt-40 lg:pt-48 xl:pt-56 pb-16 md:pb-20 lg:pb-24 xl:pb-32'
+  overlay_gradient:
+    - '0.8'
+    - '0.3'
+footer:
+  menu_enabled: true
+  menu:
+    -
+      label: 'Terms & Conditions'
+      link: '#'
+    -
+      label: 'Privacy Policy'
+      link: '#'
+  social_enabled: true
+  social:
+    -
+      network: twitter
+      link: 'https://twitter.com/getgrav'
+    -
+      network: github
+      link: 'https://github.com/getgrav'
+  copyright: "[Grav](https://getgrav.org?classes=hover:text-primary,font-bold) was \n[svg-icon icon=\"code\" class=\"text-gray-700 dark:text-gray-400 w-4 h-4\"] with\n[svg-icon icon=\"heart\" class=\"text-red-700 w-4 h-4 animate-pulse\"] by \n[Trilby Media, LLC](https://trilby.media?classes=hover:text-primary,font-bold)\n"
+notices:
+  -
+    content: 'An example **critical** message that should show up on homepage only'
+    enabled: false
+    only_homepage: true
+    type: critical
+    learn_more_link: 'https://getgrav.org'
+  -
+    content: 'An example **note** that should appear on all pages! No link..'
+    enabled: false
+    only_homepage: false
+    type: note
+    learn_more_link: null
+footer_page_route: null
+notices_page_route: null
