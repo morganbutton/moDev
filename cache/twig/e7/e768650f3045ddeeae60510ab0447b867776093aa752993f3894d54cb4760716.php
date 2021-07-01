@@ -664,6 +664,6 @@ class __TwigTemplate_69fced3b12ee60e9988c696a698d1b716022ef114e8dad61bac11856e0b
     {% endblock body %}
     </html>
 {% endif %}
-", "partials/base-root.html.twig", "C:\\wamp64\\www\\morganButton.dev\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\base-root.html.twig");
+", "partials/base-root.html.twig", "C:\\wamp64\\www\\morganButton.dev\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\base-root.html.twig");
     }
 }

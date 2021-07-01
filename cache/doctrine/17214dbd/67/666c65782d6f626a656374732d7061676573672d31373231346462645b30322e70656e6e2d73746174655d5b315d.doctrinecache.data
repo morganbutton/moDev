@@ -1,0 +1,11 @@
+1625111302
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":799:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:10:"penn-state";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:10:"Penn State";s:12:"root_of_blog";b:1;s:7:"content";a:3:{s:5:"items";a:1:{i:0;s:14:"@self.children";}s:5:"limit";i:10;s:5:"order";a:2:{s:2:"by";s:4:"date";s:3:"dir";s:4:"desc";}}}s:11:"frontmatter";s:128:"title: "Penn State"
+root_of_blog: true
+content:
+  items:
+    - "@self.children"
+
+  limit: 10
+  order:
+    by: date
+    dir: desc";s:8:"markdown";s:0:"";}s:7:"storage";a:7:{s:3:"key";s:10:"penn-state";s:11:"storage_key";s:13:"02.penn-state";s:8:"template";s:4:"blog";s:17:"storage_timestamp";i:1625110616;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"blog";i:1625110491;}}s:8:"children";a:1:{s:17:"01.DMDExhibitions";b:0;}s:8:"checksum";s:32:"f4cbeab8470f37c8d8fb7b98ce88ad6b";}}}

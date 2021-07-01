@@ -60,6 +60,6 @@ class __TwigTemplate_c512e22320d27aa4851968ddb6de8a89091146097ae7a8dfd8d334d9b0e
     public function getSourceContext()
     {
         return new Source("{% extends 'partials/base-root.html.twig' %}
-", "partials/base.html.twig", "C:\\wamp64\\www\\morganButton.dev\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\base.html.twig");
+", "partials/base.html.twig", "C:\\wamp64\\www\\morganButton.dev\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\base.html.twig");
     }
 }

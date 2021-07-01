@@ -1,6 +1,6 @@
 {% set logo = theme_var('custom_logo')|e %}
 {% set strip_svg = theme_var('custom_logo_strip_svg_style')|e %}
-<div class="site-logo h-8">
+<div class="site-logo h-12">
   {% if logo %}
     {% set logo_file = (logo|first).name %}
     {% set logo_path = (logo|first).path %}

@@ -102,6 +102,6 @@ class __TwigTemplate_96e19e660a134b83b8243c216db8926d1dd5bd39006ba15cbe83b7f5c50
 {% if language_codes.rtl(grav.user.language) %}
     {% do assets.addCss(theme_url~'/css/rtl.css') %}
 {% endif %}
-", "partials/stylesheets.html.twig", "C:\\wamp64\\www\\morganButton.dev\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\stylesheets.html.twig");
+", "partials/stylesheets.html.twig", "C:\\wamp64\\www\\morganButton.dev\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\stylesheets.html.twig");
     }
 }

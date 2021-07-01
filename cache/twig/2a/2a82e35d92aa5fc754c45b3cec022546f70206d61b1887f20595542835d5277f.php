@@ -31,7 +31,7 @@ class __TwigTemplate_f97b115af62130ac3b5fccf142ad1062e82197d1c6f3b961f3a15fb94cd
         // line 2
         $context["strip_svg"] = twig_escape_filter($this->env, $this->env->getExtension('Grav\Common\Twig\Extension\GravExtension')->themeVarFunc($context, "custom_logo_strip_svg_style"));
         // line 3
-        echo "<div class=\"site-logo h-8\">
+        echo "<div class=\"site-logo h-12\">
   ";
         // line 4
         if (($context["logo"] ?? null)) {
@@ -102,7 +102,7 @@ class __TwigTemplate_f97b115af62130ac3b5fccf142ad1062e82197d1c6f3b961f3a15fb94cd
     {
         return new Source("{% set logo = theme_var('custom_logo')|e %}
 {% set strip_svg = theme_var('custom_logo_strip_svg_style')|e %}
-<div class=\"site-logo h-8\">
+<div class=\"site-logo h-12\">
   {% if logo %}
     {% set logo_file = (logo|first).name %}
     {% set logo_path = (logo|first).path %}

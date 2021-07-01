@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1625095638,
-    'checksum' => 'c54966513a1947788032dd19c4237dfb',
+    'timestamp' => 1625110675,
+    'checksum' => 'a838e60f17123af7c3190d99e02be937',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,15 +23,15 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1625094039
+                'modified' => 1625101306
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1625095611
+                'modified' => 1625110639
             ],
             'themes/typhoon' => [
                 'file' => 'user/config/themes/typhoon.yaml',
-                'modified' => 1625095638
+                'modified' => 1625106149
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
@@ -155,16 +155,21 @@ return [
                 'external_in_new_tab' => false,
                 'append_site_title' => true,
                 'custom_logo' => [
-                    'user/assets/typhoon/capstoneFall2019.png' => [
-                        'name' => 'capstoneFall2019.png',
-                        'type' => 'image/png',
-                        'size' => 52499,
-                        'path' => 'user/assets/typhoon/capstoneFall2019.png'
+                    'user/assets/typhoon/logo.svg' => [
+                        'name' => 'logo.svg',
+                        'type' => 'image/svg+xml',
+                        'size' => 14997,
+                        'path' => 'user/assets/typhoon/logo.svg'
                     ]
                 ],
                 'custom_logo_strip_svg_style' => false,
                 'custom_favicon' => [
-                    
+                    'user/assets/typhoon/logo.svg' => [
+                        'name' => 'logo.svg',
+                        'type' => 'image/svg+xml',
+                        'size' => 14997,
+                        'path' => 'user/assets/typhoon/logo.svg'
+                    ]
                 ],
                 'colors' => [
                     'text_style' => 'text-gray-600 dark:text-gray-400',
@@ -181,12 +186,12 @@ return [
                 'section_classes' => 'bg-white dark:bg-gray-900 py-8 md:py-24',
                 'wrapper_spacing' => 'xl:container xl:mx-auto md:px-6 px-4',
                 'menu' => [
-                    'primary_location' => 'header',
+                    'primary_location' => 'sidebar',
                     'primary_menu_levels' => 3,
                     'mobile_nav' => true,
                     'icon_classes' => 'hidden md:inline-block h-4 w-4 text-gray-500 mr-1',
                     'login' => [
-                        'enabled' => true,
+                        'enabled' => false,
                         'icon' => 'tabler/user.svg',
                         'logged_in_display' => 'username',
                         'logout_icon' => 'tabler/logout.svg'
@@ -202,10 +207,10 @@ return [
                     'text' => 'auto'
                 ],
                 'hero' => [
-                    'display' => true,
+                    'display' => false,
                     'overlay' => 'dark',
                     'overlay_direction' => 'right',
-                    'alignment' => 'left',
+                    'alignment' => 'right',
                     'image' => 'theme://images/headers/sea-and-sky.jpg',
                     'custom' => '#3C4043',
                     'padding' => 'pt-32 md:pt-40 lg:pt-48 xl:pt-56 pb-16 md:pb-20 lg:pb-24 xl:pb-32',
@@ -1080,8 +1085,8 @@ node_modules'
                 'email' => 'joe@example.com'
             ],
             'taxonomies' => [
-                0 => 'category',
-                1 => 'tag'
+                0 => 'tag',
+                1 => 'category'
             ],
             'metadata' => [
                 'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'

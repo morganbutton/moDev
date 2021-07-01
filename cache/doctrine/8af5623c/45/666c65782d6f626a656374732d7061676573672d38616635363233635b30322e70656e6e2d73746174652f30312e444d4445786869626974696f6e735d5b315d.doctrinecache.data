@@ -1,0 +1,13 @@
+1625111240
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":997:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:25:"penn-state/dmdexhibitions";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:15:"DMD Exhibitions";s:12:"root_of_blog";b:1;s:7:"content";a:3:{s:5:"items";a:1:{i:0;a:1:{s:9:"@taxonomy";a:1:{s:3:"tag";a:2:{i:0;s:3:"psu";i:1;s:15:"DMD Exhibitions";}}}}s:5:"limit";i:10;s:5:"order";a:2:{s:2:"by";s:4:"date";s:3:"dir";s:4:"desc";}}}s:11:"frontmatter";s:185:"title: "DMD Exhibitions"
+root_of_blog: true
+content:
+  items:
+    - "@taxonomy":
+        tag:
+          - psu
+          - DMD Exhibitions
+  limit: 10
+  order:
+    by: date
+    dir: desc";s:8:"markdown";s:0:"";}s:7:"storage";a:7:{s:3:"key";s:25:"penn-state/dmdexhibitions";s:11:"storage_key";s:31:"02.penn-state/01.DMDExhibitions";s:8:"template";s:4:"blog";s:17:"storage_timestamp";i:1625110537;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"blog";i:1625110330;}}s:8:"children";a:2:{s:12:"headless-cms";b:0;s:18:"project-powerpoint";b:0;}s:8:"checksum";s:32:"1260d89b8dbbb2a8f9921056fb5a3c57";}}}

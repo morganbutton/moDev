@@ -95,6 +95,6 @@ class __TwigTemplate_fa7ebe9135a2eaf488f06d272dc76489847a0c2d0aa6be86dd592055d4e
 
 {% include 'partials/javascripts-extra.html.twig' ignore missing %}
 {% endif %}
-", "partials/javascripts.html.twig", "C:\\wamp64\\www\\morganButton.dev\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\javascripts.html.twig");
+", "partials/javascripts.html.twig", "C:\\wamp64\\www\\morganButton.dev\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\javascripts.html.twig");
     }
 }

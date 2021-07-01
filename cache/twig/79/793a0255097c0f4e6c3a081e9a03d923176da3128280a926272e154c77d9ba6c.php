@@ -228,6 +228,6 @@ class __TwigTemplate_932804c02e7f4aace3f6ed6f64e83fc8fe82bf6aeb67af1bc5806418cc4
     {% endfor %}
 </script>
 {% endif %}
-", "partials/javascript-config.html.twig", "C:\\wamp64\\www\\morganButton.dev\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\javascript-config.html.twig");
+", "partials/javascript-config.html.twig", "C:\\wamp64\\www\\morganButton.dev\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\javascript-config.html.twig");
     }
 }
