@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1625110675,
-    'checksum' => 'a838e60f17123af7c3190d99e02be937',
+    'timestamp' => 1625116000,
+    'checksum' => '4e30991d5875821f69d0b793d6da3daa',
     'files' => [
         'user/config' => [
             'media' => [
@@ -27,11 +27,11 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1625110639
+                'modified' => 1625115565
             ],
             'themes/typhoon' => [
                 'file' => 'user/config/themes/typhoon.yaml',
-                'modified' => 1625106149
+                'modified' => 1625116000
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',

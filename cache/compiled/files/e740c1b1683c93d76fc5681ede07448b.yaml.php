@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp64/www/morganButton.dev/user/accounts/mbutton1.yaml',
-    'modified' => 1625094326,
+    'modified' => 1625115556,
     'data' => [
         'state' => 'enabled',
         'email' => 'morgan_button@outlook.com',
@@ -17,6 +17,6 @@ return [
                 'login' => true
             ]
         ],
-        'hashed_password' => '$2y$10$wlCnzifU6VF.EqGVZKpDq.9/uas6SgN4lyksgLzlqiqNEWrcUEPUu'
+        'hashed_password' => '$2y$10$TsJpwqHuJCaCV6mnHXV4eOHS7rVKOxP5k12b/vb6WPVZ5GPx/seGG'
     ]
 ];

@@ -2,23 +2,22 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/wamp64/www/morganButton.dev/user/data/flex/indexes/pages.json',
-    'modified' => 1625110777,
+    'modified' => 1625115556,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1625110777,
-        'count' => 8,
+        'timestamp' => 1625115556,
+        'count' => 7,
         'index' => [
             '' => [
                 'key' => '',
                 'storage_key' => '',
                 'template' => NULL,
-                'storage_timestamp' => 1625110435,
+                'storage_timestamp' => 1625111111,
                 'children' => [
                     '01.home' => 1625107686,
-                    '02.penn-state' => 1625110195,
-                    '03.momo' => 1625110435
+                    '02.penn-state' => 1625110616
                 ],
-                'checksum' => '9e860ceab9fc0bd523fbafa7d1a20d2d'
+                'checksum' => '37bcde36b2d3b86a36f80d81ec14f223'
             ],
             '01.home' => [
                 'key' => 'home',
@@ -51,10 +50,10 @@ return [
                 'key' => 'penn-state/dmdexhibitions',
                 'storage_key' => '02.penn-state/01.DMDExhibitions',
                 'template' => 'blog',
-                'storage_timestamp' => 1625110777,
+                'storage_timestamp' => 1625110893,
                 'markdown' => [
                     '' => [
-                        'blog' => 1625110330
+                        'blog' => 1625110893
                     ]
                 ],
                 'children' => [
@@ -62,7 +61,7 @@ return [
                     'project-powerpoint' => 1625110292,
                     'user-workflows' => 1625110777
                 ],
-                'checksum' => '16730a57d7fbffea1b5853c21af3296c'
+                'checksum' => 'e0e1815457d684cc62992a024719cd58'
             ],
             '02.penn-state/01.DMDExhibitions/headless-cms' => [
                 'key' => 'penn-state/dmdexhibitions/headless-cms',
@@ -99,18 +98,6 @@ return [
                     ]
                 ],
                 'checksum' => '3ffecda5a7300c49bb815c612be5b2e0'
-            ],
-            '03.momo' => [
-                'key' => 'momo',
-                'storage_key' => '03.momo',
-                'template' => 'blog',
-                'storage_timestamp' => 1625110435,
-                'markdown' => [
-                    '' => [
-                        'blog' => 1625110435
-                    ]
-                ],
-                'checksum' => '5420ed8fc51a0ae40d3fb9f4a7f141a4'
             ]
         ]
     ]

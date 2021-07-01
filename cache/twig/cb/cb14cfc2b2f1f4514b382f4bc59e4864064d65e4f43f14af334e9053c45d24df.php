@@ -78,7 +78,7 @@ class __TwigTemplate_c694d4d84ca35b269b6e9d4822e600648ca8749897dfeb4fc90f7731171
         echo "
   ";
         // line 21
-        $this->loadTemplate("blog.html.twig", "blog.html.twig", 21, "1495355682")->display($context);
+        $this->loadTemplate("blog.html.twig", "blog.html.twig", 21, "1820257304")->display($context);
         // line 44
         echo "
 ";
@@ -160,7 +160,7 @@ class __TwigTemplate_c694d4d84ca35b269b6e9d4822e600648ca8749897dfeb4fc90f7731171
 
 
 /* blog.html.twig */
-class __TwigTemplate_c694d4d84ca35b269b6e9d4822e600648ca8749897dfeb4fc90f7731171a233c___1495355682 extends \Twig\Template
+class __TwigTemplate_c694d4d84ca35b269b6e9d4822e600648ca8749897dfeb4fc90f7731171a233c___1820257304 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
